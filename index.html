@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>JavaScript Lab 2</h1>    
+        <!--check if a number is positive, negative, or zero-->
+        <div class="form">
+            <h2>Check if a number is positive, negative, or zero</h2>
+            <label for="numberInput">Enter a number:</label>
+            <input type="number" id="numberInput" />
+            <button onclick="outputNumber()">Check Number</button>
+            <p id="numberResult"></p>
+    
+        <!--day of the week-->
+        <div id="weekday">
+            <h2>Display day of the week</h2>
+            <label for="dayInput">Enter a number (1 to 7):</label>
+            <input type="number" id="dayInput" min="1" max="7" />
+            <button onclick="outputDay()">Show Day</button>
+            <p id="dayResult"></p>
+        </div>
+    
+        <!--numbers using loops-->
+        <div id="loop">
+            <h2>Print numbers from 1 to 5 using loops</h2>
+            <label for="loopType">Choose a loop:</label>
+            <select id="loopType" onchange="printNumbers()">
+                <option value="blank"></option>
+                <option value="for">For Loop</option>
+                <option value="while">While Loop</option>
+                <option value="do-while">Do-While Loop</option>
+            </select>
+
+            <p>Output: </p>
+            <p id="printNumbers"></p>
+        </div>
+
+        <!--break and continue-->
+        <div id="breakContinue">
+            <h2>Break and Continue</h2>
+            <button onclick="breakContinueResult('break')">Break at 3</button>
+            <button onclick="breakContinueResult('continue')">Skip 3</button>
+            
+            <p>Output: </p>
+            <p id="output"></p>
+        </div>
+
+        <!--scope and context -->
+        <div id="scopeContext">
+            <h2>Scope and Context</h2>
+                <button onclick="displayScope()">Show Scope</button>
+        
+            <p>Result</p>
+            <p id="scopeResult"></p>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer>
+            <p>Copyright © 2024 Anupa Ragoonanan</p>
+        </footer>
+    </div>
+</body>
+</html>
